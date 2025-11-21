@@ -1,0 +1,16 @@
+{
+  "name": "microcoaster-forum",
+  "version": "1.0.0",
+  "description": "Forum MicroCoaster - En cours de construction",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["forum", "microcoaster"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
