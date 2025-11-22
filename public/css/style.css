@@ -16,20 +16,28 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  height: 100%;
-  overflow: hidden;
+html, body {
+  min-height: 100%;
+  height: auto;
 }
 
 body {
   background: var(--bg);
   color: var(--text);
   font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  margin: 0;
   padding: 20px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+/* Hide WebKit scrollbar */
+body::-webkit-scrollbar {
+  display: none;
 }
 
 .container {
@@ -37,6 +45,8 @@ body {
   width: 100%;
   text-align: center;
   animation: fadeIn 1s ease-in-out;
+  margin: 0 auto;
+  padding-top: 18px;
 }
 
 /* Logo container */
@@ -249,60 +259,79 @@ h1 {
 
 /* Responsive */
 @media (max-width: 768px) {
+  body {
+    padding: 15px;
+  }
+
   .logo-img {
-    width: 85%;
-    max-width: 320px;
+    width: 90%;
+    max-width: 300px;
   }
 
-  .forum-title {
-    font-size: 36px;
-  }
-
+  .forum-title,
   h1 {
-    font-size: 36px;
+    font-size: 32px;
   }
 
   .description {
-    font-size: 18px;
+    font-size: 16px;
+    margin-bottom: 24px;
   }
 
   .countdown {
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
+    gap: 12px;
   }
 
   .countdown-container {
-    padding: 30px 20px;
+    padding: 22px 16px;
+    margin: 28px 0;
   }
 
   .countdown-number {
-    font-size: 36px;
+    font-size: 34px;
   }
 
   .social-links {
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
   }
 }
 
 @media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
   .logo-img {
-    width: 90%;
-    max-width: 280px;
+    width: 95%;
+    max-width: 260px;
   }
 
-  .forum-title {
-    font-size: 28px;
-  }
-
+  .forum-title,
   h1 {
-    font-size: 28px;
+    font-size: 26px;
+  }
+
+  .countdown {
+    gap: 10px;
   }
 
   .countdown-item {
-    padding: 20px 12px;
+    padding: 16px 10px;
   }
 
   .countdown-number {
-    font-size: 32px;
+    font-size: 28px;
+  }
+
+  .social-links {
+    gap: 8px;
+  }
+
+  .social-link {
+    flex: 1 1 100%;
+    justify-content: center;
   }
 }
