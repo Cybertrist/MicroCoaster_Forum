@@ -1,6 +1,6 @@
 <div align="center">
 
-# MicroCoaster — Forum
+# MicroCoaster : forum
 
 Page d'attente du forum communautaire MicroCoaster : compte à rebours, bascule de langue et rien de superflu.
 
@@ -16,7 +16,7 @@ Page d'attente du forum communautaire MicroCoaster : compte à rebours, bascule 
 
 Le forum n'est pas encore ouvert. En attendant, cette page tient la place : elle affiche le temps restant avant le lancement, explique ce qui arrive et parle français ou anglais selon le visiteur.
 
-C'est volontairement minuscule — un serveur Express qui sert du statique. Pas de framework front, pas d'étape de build, un `npm start` et c'est en ligne.
+C'est volontairement minuscule : un serveur Express qui sert du statique. Pas de framework front, pas d'étape de build, un `npm start` et c'est en ligne.
 
 ## Contenu
 
@@ -39,7 +39,7 @@ Le serveur écoute sur `http://localhost:3000`, ou sur `PORT` si la variable est
 
 ## Changer la date de lancement
 
-Elle est définie dans `public/js/countdown.js`. Le message de démarrage dans `server.js` l'affiche aussi — pensez à mettre les deux d'accord.
+Elle est définie dans `public/js/countdown.js`. Le message de démarrage dans `server.js` l'affiche aussi, pensez à mettre les deux d'accord.
 
 ## Ajouter une langue
 
