@@ -39,4 +39,4 @@ Une clé oubliée ne casse rien, elle laisse simplement le texte d'origine à sa
 
 ---
 
-<sub>Projet MicroCoaster · voir aussi <a href="https://github.com/Cybertrist/MicroCoaster_Docs">MicroCoaster_Docs</a> et l'organisation <a href="https://github.com/Microcoaster">MicroCoaster</a>, qui héberge l'application de pilotage et les firmwares des modules.</sub>
+<sub>MicroCoaster · Auteur : Cybertrist</sub>
